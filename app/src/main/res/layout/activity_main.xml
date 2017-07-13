@@ -13,5 +13,84 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Select a remote :" />
+
+    <TextView
+        android:text="Create new remote :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editText2"
+        style="@style/Widget.AppCompat.EditText"
+        android:singleLine="false"
+        android:selectAllOnFocus="false"
+        android:cursorVisible="true" />
+
+    <Button
+        android:text="Go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp" >
+
+        <RadioButton
+            android:text="device 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/device1"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="device 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/device2"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="device 3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/device3"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="device 4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/device4"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <Button
+        android:text="Train"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginTop="39dp"
+        android:id="@+id/button2" />
 </RelativeLayout>
